@@ -94,7 +94,7 @@ contract ReservableToken is MintableToken {
 
     /**
     * @dev Set reserved addresses and its amounts in batch
-    * @param address Addresses list to reserve tokens
+    * @param addrs Addresses list to reserve tokens
     * @param amounts Amount reserved list to address
     */
     function setReservedTokensListMultiple(address[] addrs, uint256[] amounts) internal canMint onlyOwner {
